@@ -3,7 +3,7 @@
 <suite name="HomePage" verbose = "2" parallel = "classes" thread-count = "5">
   <test thread-count="5" name="HomePage_test">
   <classes>
-  	<class name = "testrunners.ParallelTestRunner"/>
+  	<class name = "testrunners.MyTestRunner"/>
   </classes>
   </test> <!-- HomePage_test -->
 </suite> <!-- HomePage -->

@@ -13,6 +13,6 @@ import io.cucumber.testng.CucumberOptions;
 				},
 		monochrome = true,
 		publish = true,
-		tags = ""
+		tags = "@homepage"
 		)
 public class MyTestRunner extends AbstractTestNGCucumberTests{}

@@ -1,6 +1,7 @@
 
 Feature: HomePage
 
+	@homepage
   Scenario: Navigate to Registration page from Index page
     Given I navigate to home page
     When Home Page is loaded
