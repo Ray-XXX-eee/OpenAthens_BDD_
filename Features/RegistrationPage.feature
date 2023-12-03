@@ -1,8 +1,11 @@
 Feature: Registration Page Feature
+
+Background: Navigate to Register page
+	Given I navigate to register page
+	
 	@register
 	@end-to-end
   Scenario: Test Registration Succes (happy path)
-    Given I navigate to register page
     When I give 'name' input as 'Raihan Kabir'
     And I give 'email' input as 'raihan@gmail.com'
     And I give 'webpage' input as 'https://raihan.com'
@@ -12,10 +15,22 @@ Feature: Registration Page Feature
     And Click register
     Then Registration should be successfull
     
+  #@excel-data  
+  #Scenario Outline: Test Registration Succes (happy path)
+    #When User fills data from given "<Sheet>" and <Row>
+    #And Click register
+    #Then Registration should be successfull
+    #
+    #Examples: 
+    #|Sheet    |Row|
+    #|Register |	0 |
+    #|Register |	1 |
+    #|Register |	2 |
+    #|Register |	3 |
+    
 	@negetive_test
 	@register
   Scenario: Test Mandatory field (Email missing)
-    Given I navigate to register page
     When I give 'name' input as 'Raihan Kabir'
     And I give 'email' input as ''
     And I give 'webpage' input as 'https://raihan.com'
@@ -29,7 +44,6 @@ Feature: Registration Page Feature
    @negetive_test
 	 @register
    Scenario: Test Mandatory field (Interest missing)
-    Given I navigate to register page
     When I give 'name' input as 'Raihan Kabir'
     And I give 'email' input as 'raihan@gmail.com'
     And I give 'webpage' input as 'https://raihan.com'
@@ -42,8 +56,8 @@ Feature: Registration Page Feature
    
    @negetive_test
 	 @register
+	 @last
    Scenario: Test Mandatory field (Password missing)
-    Given I navigate to register page
     When I give 'name' input as 'Raihan Kabir'
     And I give 'email' input as 'raihan@gmail.com'
     And I give 'webpage' input as 'https://raihan.com'

@@ -1,7 +1,7 @@
 
 Feature: HomePage
 
-	@dashboard
+	@dashboard1
   Scenario: Check DashBoard page (Happy Path)
     Given I navigate to register page
     When I give 'name' input as 'Raihan Kabir'

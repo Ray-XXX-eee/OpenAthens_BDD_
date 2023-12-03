@@ -1,12 +1,17 @@
 package stepDefinitions;
 
 import java.io.IOException;
+import java.util.List;
+import java.util.Map;
 import java.util.Properties;
+
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 
 import com.pages.Homepage;
 import com.pages.RegistrationPage;
 import com.qa.factory.DriverFactory;
 import com.qa.util.ConfigReader;
+import com.qa.util.ExcelReader;
 
 import io.cucumber.java.en.*;
 
@@ -43,4 +48,19 @@ public class RegistrationpageSteps {
 	public void should_not_navigate_to_dashboard() throws InterruptedException {
 		RP.assertNotRegistered();
 	}
+	//Getting issue with Excel in my local -----
+	
+//	@When("User fills data from given {string} and {int}")
+//	public void user_fills_data_from_given_and(String sheetName, Integer row) throws InvalidFormatException, IOException {
+//		ExcelReader reader = new ExcelReader();
+//		List<Map<String,String>> data = reader.getData("./testData.xlsx", sheetName);
+//		String name = data.get(row).get("name");
+//		String email = data.get(row).get("email");
+//		String webpage = data.get(row).get("webpage");
+//		String interest = data.get(row).get("interest");
+//		String password = data.get(row).get("password");
+//		String cnfPassword = data.get(row).get("cnfPassword");	
+//		
+//	}
+	
 	}

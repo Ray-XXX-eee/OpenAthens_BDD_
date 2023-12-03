@@ -12,12 +12,10 @@ import io.cucumber.testng.CucumberOptions;
 				"rerun:target/failed_test.txt"
 				}, 
 		monochrome = true,
-		publish = true,
 		glue = { "stepDefinitions" },
-		features = { "Features" },
-		tags = "@dashboard1") //@register //excel-data //dashboard1
+		features = { "@target/failed_test.txt" })
 
-public class ParallelTestRunner extends AbstractTestNGCucumberTests {
+public class FailedRunner extends AbstractTestNGCucumberTests {
 	@Override
 	@DataProvider(parallel = true)
 	public Object[][] scenarios() {

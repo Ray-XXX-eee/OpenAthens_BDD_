@@ -9,7 +9,10 @@ import io.cucumber.testng.CucumberOptions;
 		plugin = {"pretty", "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
 				"html:target/cucumber-Report.html",
 				"json:target/report.json",
+				"rerun:target/failed_test.txt"
 				},
-		tags = "@end-to-end"
+		monochrome = true,
+		publish = true,
+		tags = ""
 		)
 public class MyTestRunner extends AbstractTestNGCucumberTests{}
