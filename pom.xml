@@ -150,7 +150,7 @@
 				<configuration>
 					<systemPropertyVariables>
                         <!-- Set the EdgeDriver path -->
-                        <webdriver.edge.driver>/usr/local/bin/msedgedriver</webdriver.edge.driver>
+                        <webdriver.edge.driver>C:\Windows\System32\msedgedriver.exe</webdriver.edge.driver>
                     </systemPropertyVariables>
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
