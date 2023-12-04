@@ -13,16 +13,12 @@ import io.cucumber.java.en.*;
 
 
 public class DashboardSteps {
-	//public String url;
+	
 	ConfigReader confreader = new ConfigReader();
 	Properties prop = confreader.init_prop("config");
 	private DashBoard DB = new DashBoard(DriverFactory.getDriver());
 	private Actions Act = new Actions(DriverFactory.getDriver());
 	
-//	public steps(String url) throws IOException {
-//		url = readProperties.read("config").toString();	
-//		System.out.println(url+"url test");
-//	}
 
 	@Given("I navigate to Dashboard page")
 	public void i_navigate_to_dashboard_page() throws IOException {

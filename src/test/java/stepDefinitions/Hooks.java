@@ -33,12 +33,13 @@ public class Hooks {
 	@After
 	public void tearDown(Scenario scenario) {
 		
-//		if (scenario.isFailed()) {
-//			// take screenshot:
-//			String screenshotName = scenario.getName().replaceAll(" ", "_");
-//			byte[] sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-//			scenario.attach(sourcePath, "image/png", screenshotName);
-//			}
+		if (scenario.isFailed()) {
+			// take screenshot:
+			String screenshotName = scenario.getName().replaceAll(" ", "_");
+			byte[] sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+			scenario.attach(sourcePath, "image/png", screenshotName);
+			}
+		//quit driver
 		driver.quit();
 	}
 

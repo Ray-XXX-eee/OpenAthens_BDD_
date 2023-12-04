@@ -1,7 +1,0 @@
-.required label::before {
-	content: "*";
-	color: red;
-	display: inline-block;
-	margin-right: 5px;
-}
-

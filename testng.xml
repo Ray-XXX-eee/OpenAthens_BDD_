@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="HomePage" verbose = "2" parallel = "classes" thread-count = "5">
-  <test thread-count="5" name="HomePage_test">
+  <test thread-count="5" name="OpenAthens_test">
   <classes>
-  	<class name = "testrunners.MyTestRunner"/>
+  	<class name = "testrunners.ParallelTestRunner"/>
   </classes>
   </test> <!-- HomePage_test -->
 </suite> <!-- HomePage -->

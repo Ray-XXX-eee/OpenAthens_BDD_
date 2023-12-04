@@ -9,10 +9,45 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">HomePage</th></tr>
-<tr><td><a href="#t0">HomePage_test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">6,753</td><td></td><td></td></tr>
+<tr><td><a href="#t0">OpenAthens_test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">38,686</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">HomePage</th></tr></tbody><tbody id="t0"><tr><th colspan="4">HomePage_test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testrunners.MyTestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1701652550048</td><td rowspan="1">4586</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">HomePage</th></tr></tbody><tbody id="t0"><tr><th colspan="4">OpenAthens_test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testrunners.ParallelTestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1701680135212</td><td rowspan="1">33376</td></tr><tr><th colspan="4">OpenAthens_test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">testrunners.ParallelTestRunner</td><td><a href="#m1">runScenario</a></td><td rowspan="7">1701680135211</td><td rowspan="7">20878</td></tr><tr class="passedeven"><td><a href="#m2">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m3">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m4">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m5">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m6">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m7">runScenario</a></td></tr></tbody>
 </table>
-<h2>HomePage_test</h2><h3 id="m0">testrunners.MyTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Navigate to Registration page from Index page&quot;</td><td>&quot;HomePage&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>OpenAthens_test</h2><h3 id="m0">testrunners.ParallelTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Test Mandatory field (Email missing)&quot;</td><td>&quot;Registration Page Feature&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(@class, &apos;ng-binding&apos;) and contains(text(), &apos;You must provide a valid email address&apos;)]&quot;}
+  (Session info: MicrosoftEdge=119.0.2151.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3344e622d183c83ec9e291830e8ed643, findElement {using=xpath, value=//p[contains(@class, &apos;ng-binding&apos;) and contains(text(), &apos;You must provide a valid email address&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 119.0.2151.97, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60209}, msedge: {msedgedriverVersion: 119.0.2151.97 (42f50dec8b7a..., userDataDir: C:\Users\Rayha\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60209/devtoo..., se:cdpVersion: 119.0.2151.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3344e622d183c83ec9e291830e8ed643
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at com.pages.RegistrationPage.assertErrorMsg(RegistrationPage.java:111)
+	at stepDefinitions.RegistrationpageSteps.should_throw_error_message(RegistrationpageSteps.java:43)
+	at ✽.Should throw error message for &apos;email&apos;(file:///C:/Users/Rayha/Desktop/Projects/Testing/openAthens_final/OpenAthens_BDD/Features/RegistrationPage.feature:41)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testrunners.ParallelTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Navigate to Registration page from Index page&quot;</td><td>&quot;HomePage&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testrunners.ParallelTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Test Registration Succes (happy path)&quot;</td><td>&quot;Registration Page Feature&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testrunners.ParallelTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Navigate to Registration page from Index page&quot;</td><td>&quot;HomePage&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testrunners.ParallelTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Test Mandatory field (Password missing)&quot;</td><td>&quot;Registration Page Feature&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testrunners.ParallelTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Registration completion and dashBoard page load&quot;</td><td>&quot;HomePage&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testrunners.ParallelTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Check DashBoard page table&quot;</td><td>&quot;HomePage&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testrunners.ParallelTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Test Mandatory field (Interest missing)&quot;</td><td>&quot;Registration Page Feature&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

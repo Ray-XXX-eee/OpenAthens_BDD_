@@ -16,6 +16,8 @@ import com.qa.util.ConfigReader;
 import org.openqa.selenium.support.Color;
 
 public class DashBoard {
+	
+		//Loc Var
 		private WebDriver driver;
 		private ConfigReader confreader = new ConfigReader();
 		private Properties conf = confreader.init_prop("config");
@@ -23,22 +25,25 @@ public class DashBoard {
 		private Actions Action = new Actions(DriverFactory.getDriver());
 		
 		
+		//Locators (Read from locators.properties)--------------------------------------------------------------------------------------
 //		private By RegHeader = By.xpath("//h1[text()='Registration']");
 		private By table_tr = By.xpath(locators.getProperty("table_tr"));
 		private By gradColor = By.xpath(locators.getProperty("gradColor"));
 		private By gradScColor = By.xpath(locators.getProperty("gradScColor"));
 		private By lawColor = By.xpath(locators.getProperty("lawColor"));
 		
+		
+		//Constructor------------------------------------------------------------------------------------------------------------------
+		public DashBoard(WebDriver driver) {
+			this.driver = driver;
+		}
+		
+		//Page Actions------------------------------------------------------------------------------------------------------------------
 		public void gotoDashBoard() throws IOException {
 			String link = conf.getProperty("dashboard_page");
 			driver.get(System.getProperty("user.dir")+link);
 		}
 		
-		public DashBoard(WebDriver driver) {
-			this.driver = driver;
-		}
-		
-		//Actions		
 		public void countTr(Integer int_) {
 			int rowCount = driver.findElements(table_tr).size();
 			Assert.assertTrue(rowCount==int_);

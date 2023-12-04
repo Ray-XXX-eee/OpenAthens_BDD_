@@ -15,24 +15,26 @@ import com.qa.util.Actions;
 import com.qa.util.ConfigReader;
 
 public class Homepage {
+	
+	//Loc Var
 	private WebDriver driver;
 	private ConfigReader confreader = new ConfigReader();
 	private Properties conf = confreader.init_prop("config");
 	private Properties locators = confreader.init_prop("locators");
 	private Actions Action = new Actions(DriverFactory.getDriver());
 	
-	//Constructor
+	//Constructor------------------------------------------------------------------------------------------------------------------
 		public Homepage(WebDriver driver) {
 			this.driver = driver;
 		}
 	
-	// By locators
+	//Locators (Read from locators.properties)--------------------------------------------------------------------------------------
 	private By btnRegisterLink = By.xpath(locators.getProperty("btnRegisterLink"));
 	private By RegHeader = By.xpath(locators.getProperty("RegHeader"));
 	
 	
 
-	//Page Actions
+	//PageActions------------------------------------------------------------------------------------------------------------------
 	public void gotoHomePage() throws IOException {
 		String link = conf.getProperty("home_page");
 		driver.get(System.getProperty("user.dir")+link);

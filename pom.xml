@@ -148,10 +148,6 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M5</version>
 				<configuration>
-					<systemPropertyVariables>
-                        <!-- Set the EdgeDriver path for GitHub Actions  -->
-                        <webdriver.edge.driver>\src\test\resources\msedgedriver.exe</webdriver.edge.driver>
-                    </systemPropertyVariables>
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>

@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-04T01:15:48 GMT" name="HomePage" finished-at="2023-12-04T01:15:55 GMT" duration-ms="6753">
+  <suite started-at="2023-12-04T08:55:34 GMT" name="HomePage" finished-at="2023-12-04T08:56:12 GMT" duration-ms="38686">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.MyTestRunner@13330ac6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.ParallelTestRunner@39a2bb97]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-12-04T01:15:48 GMT" name="HomePage_test" finished-at="2023-12-04T01:15:55 GMT" duration-ms="6753">
-      <class name="testrunners.MyTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunners.MyTestRunner@13330ac6]" started-at="2023-12-04T01:15:48 GMT" name="setUpClass" finished-at="2023-12-04T01:15:50 GMT" duration-ms="1079" status="PASS">
+    <test started-at="2023-12-04T08:55:34 GMT" name="OpenAthens_test" finished-at="2023-12-04T08:56:12 GMT" duration-ms="38686">
+      <class name="testrunners.ParallelTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunners.ParallelTestRunner@39a2bb97]" started-at="2023-12-04T08:55:34 GMT" name="setUpClass" finished-at="2023-12-04T08:55:35 GMT" duration-ms="912" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@767e20cf]]>
+                <![CDATA[org.testng.TestRunner@340b9973]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.MyTestRunner@13330ac6]" started-at="2023-12-04T01:15:50 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-04T01:15:54 GMT" duration-ms="4586" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.ParallelTestRunner@39a2bb97]" started-at="2023-12-04T08:55:35 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-04T08:55:56 GMT" duration-ms="20878" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,11 +37,167 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunners.MyTestRunner@13330ac6]" started-at="2023-12-04T01:15:54 GMT" name="tearDownClass" finished-at="2023-12-04T01:15:55 GMT" duration-ms="988" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.ParallelTestRunner@39a2bb97]" started-at="2023-12-04T08:55:35 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-04T08:55:55 GMT" duration-ms="20643" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test Registration Succes (happy path)"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registration Page Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.ParallelTestRunner@39a2bb97]" started-at="2023-12-04T08:55:35 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-04T08:56:01 GMT" duration-ms="26696" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Registration completion and dashBoard page load"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["HomePage"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.ParallelTestRunner@39a2bb97]" started-at="2023-12-04T08:55:35 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-04T08:55:54 GMT" duration-ms="19599" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Navigate to Registration page from Index page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["HomePage"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.ParallelTestRunner@39a2bb97]" started-at="2023-12-04T08:55:35 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-04T08:55:56 GMT" duration-ms="20926" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test Mandatory field (Password missing)"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registration Page Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.ParallelTestRunner@39a2bb97]" started-at="2023-12-04T08:55:35 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-04T08:56:08 GMT" duration-ms="33466" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check DashBoard page table"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["HomePage"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.ParallelTestRunner@39a2bb97]" started-at="2023-12-04T08:55:35 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-04T08:56:11 GMT" duration-ms="36567" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test Mandatory field (Interest missing)"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registration Page Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.ParallelTestRunner@39a2bb97]" started-at="2023-12-04T08:55:35 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-04T08:56:08 GMT" duration-ms="33376" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test Mandatory field (Email missing)"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registration Page Feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(@class, 'ng-binding') and contains(text(), 'You must provide a valid email address')]"}
+  (Session info: MicrosoftEdge=119.0.2151.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3344e622d183c83ec9e291830e8ed643, findElement {using=xpath, value=//p[contains(@class, 'ng-binding') and contains(text(), 'You must provide a valid email address')]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 119.0.2151.97, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60209}, msedge: {msedgedriverVersion: 119.0.2151.97 (42f50dec8b7a..., userDataDir: C:\Users\Rayha\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60209/devtoo..., se:cdpVersion: 119.0.2151.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3344e622d183c83ec9e291830e8ed643]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(@class, 'ng-binding') and contains(text(), 'You must provide a valid email address')]"}
+  (Session info: MicrosoftEdge=119.0.2151.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3344e622d183c83ec9e291830e8ed643, findElement {using=xpath, value=//p[contains(@class, 'ng-binding') and contains(text(), 'You must provide a valid email address')]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 119.0.2151.97, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60209}, msedge: {msedgedriverVersion: 119.0.2151.97 (42f50dec8b7a..., userDataDir: C:\Users\Rayha\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60209/devtoo..., se:cdpVersion: 119.0.2151.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3344e622d183c83ec9e291830e8ed643
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+at com.pages.RegistrationPage.assertErrorMsg(RegistrationPage.java:111)
+at stepDefinitions.RegistrationpageSteps.should_throw_error_message(RegistrationpageSteps.java:43)
+at ✽.Should throw error message for 'email'(file:///C:/Users/Rayha/Desktop/Projects/Testing/openAthens_final/OpenAthens_BDD/Features/RegistrationPage.feature:41)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunners.ParallelTestRunner@39a2bb97]" started-at="2023-12-04T08:56:11 GMT" name="tearDownClass" finished-at="2023-12-04T08:56:12 GMT" duration-ms="1120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- testrunners.MyTestRunner -->
-    </test> <!-- HomePage_test -->
+      </class> <!-- testrunners.ParallelTestRunner -->
+    </test> <!-- OpenAthens_test -->
   </suite> <!-- HomePage -->
 </testng-results>

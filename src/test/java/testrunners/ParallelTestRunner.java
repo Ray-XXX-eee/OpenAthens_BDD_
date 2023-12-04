@@ -15,7 +15,7 @@ import io.cucumber.testng.CucumberOptions;
 		publish = true,
 		glue = { "stepDefinitions" },
 		features = { "Features" },
-		tags = "@dashboard1") //@register //excel-data //dashboard1
+		tags = "") //@register //excel-data //dashboard1
 
 public class ParallelTestRunner extends AbstractTestNGCucumberTests {
 	@Override

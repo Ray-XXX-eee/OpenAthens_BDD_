@@ -17,25 +17,22 @@ public class DriverFactory {
 	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 
 	/**
-	 * This method is used to initialize the thradlocal driver on the basis of given
-	 * browser
-	 * 
-	 * @param browser
+	 * This method is used to initialize the threadlocal driver on the basis of given
 	 * @return this will return tldriver.
 	 */
+	
 	public WebDriver init_driver(String browser) {
 
-		System.out.println("browser value is: " + browser);
+		System.out.println("browser value is: " + browser); //chanhe to logger
 
 		if (browser.equals("chrome")) {
 			ChromeOptions options = new ChromeOptions();  
-			options.addArguments("--headless");
-			options.addArguments("start-maximized"); // open Browser in maximized mode
-			options.addArguments("disable-infobars"); // disabling infobars
-			options.addArguments("--disable-extensions"); // disabling extensions
-			//options.addArguments("--disable-gpu"); // applicable to windows os only
-			options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-			options.addArguments("--no-sandbox"); // Bypass OS security model
+			//options.addArguments("--headless");
+			options.addArguments("start-maximized"); 
+			options.addArguments("disable-infobars"); 
+			options.addArguments("--disable-extensions");
+			options.addArguments("--disable-dev-shm-usage");
+			options.addArguments("--no-sandbox");
 			WebDriverManager.chromedriver().setup();
 			tlDriver.set(new ChromeDriver(options));
 			
@@ -46,15 +43,15 @@ public class DriverFactory {
 		} else if (browser.equals("edge")) {
 			EdgeOptions options = new EdgeOptions();
 	        options.addArguments("--no-sandbox");
-	        options.addArguments("--headless");
-	        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-	        options.addArguments("disable-infobars"); // disabling infobars
-	        options.addArguments("--disable-extensions"); // disabling extensions 
+	        //options.addArguments("--headless");
+	        options.addArguments("--disable-dev-shm-usage"); 
+	        options.addArguments("disable-infobars"); 
+	        options.addArguments("--disable-extensions");  
 	        options.addArguments("--disable-dev-shm-usage");
 			WebDriverManager.edgedriver().setup();
 			tlDriver.set(new EdgeDriver(options));
 		} else {
-			System.out.println("Please pass the correct browser value: " + browser);
+			System.out.println("Please pass the correct browser value: " + browser); //chanhe to logger
 		}
 
 		getDriver().manage().deleteAllCookies();

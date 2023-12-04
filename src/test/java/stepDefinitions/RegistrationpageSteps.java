@@ -16,8 +16,6 @@ import com.qa.util.ExcelReader;
 import io.cucumber.java.en.*;
 
 public class RegistrationpageSteps {
-//	ConfigReader confreader = new ConfigReader();
-//	Properties prop = confreader.init_prop("config");
 	private RegistrationPage RP = new RegistrationPage(DriverFactory.getDriver());
 	
 	@Given("I navigate to register page")

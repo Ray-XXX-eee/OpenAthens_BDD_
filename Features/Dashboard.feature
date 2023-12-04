@@ -2,7 +2,7 @@
 Feature: HomePage
 
 	@dashboard1
-  Scenario: Check DashBoard page (Happy Path)
+  Scenario: Registration completion and dashBoard page load
     Given I navigate to register page
     When I give 'name' input as 'Raihan Kabir'
     And I give 'email' input as 'raihan@gmail.com'
