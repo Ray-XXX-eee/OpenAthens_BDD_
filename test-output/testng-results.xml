@@ -2,30 +2,30 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-04T00:31:20 GMT" name="Default suite" finished-at="2023-12-04T00:31:29 GMT" duration-ms="8919">
+  <suite started-at="2023-12-04T01:15:48 GMT" name="HomePage" finished-at="2023-12-04T01:15:55 GMT" duration-ms="6753">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.ParallelTestRunner@13330ac6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.MyTestRunner@13330ac6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-12-04T00:31:20 GMT" name="Default test" finished-at="2023-12-04T00:31:29 GMT" duration-ms="8919">
-      <class name="testrunners.ParallelTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunners.ParallelTestRunner@13330ac6]" started-at="2023-12-04T00:31:20 GMT" name="setUpClass" finished-at="2023-12-04T00:31:21 GMT" duration-ms="932" status="PASS">
+    <test started-at="2023-12-04T01:15:48 GMT" name="HomePage_test" finished-at="2023-12-04T01:15:55 GMT" duration-ms="6753">
+      <class name="testrunners.MyTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunners.MyTestRunner@13330ac6]" started-at="2023-12-04T01:15:48 GMT" name="setUpClass" finished-at="2023-12-04T01:15:50 GMT" duration-ms="1079" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1de6932a]]>
+                <![CDATA[org.testng.TestRunner@767e20cf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.ParallelTestRunner@13330ac6]" started-at="2023-12-04T00:31:21 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-04T00:31:27 GMT" duration-ms="6568" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunners.MyTestRunner@13330ac6]" started-at="2023-12-04T01:15:50 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-04T01:15:54 GMT" duration-ms="4586" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Check DashBoard page (Happy Path)"]]>
+                <![CDATA["Navigate to Registration page from Index page"]]>
               </value>
             </param>
             <param index="1">
@@ -37,11 +37,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunners.ParallelTestRunner@13330ac6]" started-at="2023-12-04T00:31:27 GMT" name="tearDownClass" finished-at="2023-12-04T00:31:29 GMT" duration-ms="1316" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunners.MyTestRunner@13330ac6]" started-at="2023-12-04T01:15:54 GMT" name="tearDownClass" finished-at="2023-12-04T01:15:55 GMT" duration-ms="988" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- testrunners.ParallelTestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- testrunners.MyTestRunner -->
+    </test> <!-- HomePage_test -->
+  </suite> <!-- HomePage -->
 </testng-results>
