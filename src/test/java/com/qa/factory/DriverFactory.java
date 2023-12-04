@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
@@ -42,8 +43,16 @@ public class DriverFactory {
 			WebDriverManager.firefoxdriver().setup();
 			tlDriver.set(new FirefoxDriver());
 		} else if (browser.equals("edge")) {
+			EdgeOptions options = new EdgeOptions();
+	        options.addArguments("--no-sandbox");
+	        options.setBinary("C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe");
+	        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+	        options.addArguments("disable-infobars"); // disabling infobars
+	        options.addArguments("--disable-extensions"); // disabling extensions
+	        options.addArguments("--disable-gpu"); // applicable to windows os only
+	        options.addArguments("--disable-dev-shm-usage");
 			WebDriverManager.edgedriver().setup();
-			tlDriver.set(new EdgeDriver());
+			tlDriver.set(new EdgeDriver(options));
 		} else {
 			System.out.println("Please pass the correct browser value: " + browser);
 		}
@@ -54,11 +63,6 @@ public class DriverFactory {
 
 	}
 
-	/**
-	 * this is used to get the driver with ThreadLocal
-	 * 
-	 * @return
-	 */
 	public static synchronized WebDriver getDriver() {
 		return tlDriver.get();
 	}
