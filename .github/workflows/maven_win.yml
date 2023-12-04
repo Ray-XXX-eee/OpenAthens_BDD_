@@ -1,9 +1,8 @@
-name: Selenium Tests Windows
+name: Selenium Tests
 
 on:
   push:
-    branches:
-      - main
+    branches: [master]
 
 jobs:
   test:
@@ -22,7 +21,7 @@ jobs:
     - name: Install Microsoft Edge WebDriver
       run: |
         # Download and install Edge WebDriver
-        Invoke-WebRequest -Uri https://msedgedriver.azureedge.net/latest/edgedriver_win64.zip -OutFile edgedriver_win64.zip
+        Invoke-WebRequest -Uri https://msedgedriver.azureedge.net/LATEST_STABLE -OutFile edgedriver_win64.zip
         Expand-Archive -Path edgedriver_win64.zip -DestinationPath $env:USERPROFILE
         Move-Item "$env:USERPROFILE/msedgedriver.exe" "C:\Windows\System32\msedgedriver.exe"
 
