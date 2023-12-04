@@ -42,10 +42,11 @@ public class DriverFactory {
 		} else if (browser.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			tlDriver.set(new FirefoxDriver());
+			
 		} else if (browser.equals("edge")) {
 			EdgeOptions options = new EdgeOptions();
 	        options.addArguments("--no-sandbox");
-	        options.setBinary("C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe");
+	        options.addArguments("--headless");
 	        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 	        options.addArguments("disable-infobars"); // disabling infobars
 	        options.addArguments("--disable-extensions"); // disabling extensions

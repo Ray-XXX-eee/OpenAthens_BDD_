@@ -148,6 +148,10 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M5</version>
 				<configuration>
+					<systemPropertyVariables>
+                        <!-- Set the EdgeDriver path -->
+                        <webdriver.edge.driver>/usr/local/bin/msedgedriver</webdriver.edge.driver>
+                    </systemPropertyVariables>
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
@@ -167,4 +171,8 @@
 </project>
 
 <!-- <includes> <include>**/ParallelTestRunner.java</include> </includes> 
-	<parallel>methods</parallel> <threadCount>4</threadCount> <useUnlimitedThreads>false</useUnlimitedThreads> -->
+	<parallel>methods</parallel> <threadCount>4</threadCount> <useUnlimitedThreads>false</useUnlimitedThreads>
+	                    <systemPropertyVariables>
+                        <webdriver.chrome.driver>/tmp/chromedriver/chromedriver</webdriver.chrome.driver>
+                    </systemPropertyVariables>
+                     -->
