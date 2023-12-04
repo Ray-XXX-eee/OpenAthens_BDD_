@@ -1,0 +1,31 @@
+name: Selenium Tests Windows
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v2
+      with:
+        distribution: 'adopt'
+        java-version: '11'
+
+    - name: Install Microsoft Edge WebDriver
+      run: |
+        # Download and install Edge WebDriver
+        Invoke-WebRequest -Uri https://msedgedriver.azureedge.net/latest/edgedriver_win64.zip -OutFile edgedriver_win64.zip
+        Expand-Archive -Path edgedriver_win64.zip -DestinationPath $env:USERPROFILE
+        Move-Item "$env:USERPROFILE/msedgedriver.exe" "C:\Windows\System32\msedgedriver.exe"
+
+    - name: Run Selenium Tests
+      run: |
+        mvn clean test -Dwebdriver.edge.driver=C:\Windows\System32\msedgedriver.exe
